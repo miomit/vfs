@@ -1,3 +1,4 @@
+import 'package:vfs/src/virtual_file_system.dart';
 import 'package:vfs/vfs.dart';
 
 abstract class File extends VirtualFileSystemEntity {

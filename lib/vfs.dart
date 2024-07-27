@@ -5,7 +5,6 @@
 library;
 
 export 'package:vfs/src/stat.dart';
-export 'package:vfs/src/virtual_file_system.dart';
 
 export 'package:vfs/src/virtual_file_system_entity.dart';
 export 'package:vfs/src/virtual_file_system_entity_type.dart';
