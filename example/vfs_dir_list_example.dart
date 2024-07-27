@@ -30,9 +30,7 @@ void main() {
     ],
   );
 
-  (VirtualFileSystem.open("/home/miomit")! as Dir)
-      .list(recursive: true)
-      .listen((vfse) {
+  Dir.open("/home/miomit")!.list(recursive: true).listen((vfse) {
     print(vfse.path);
   });
 }
