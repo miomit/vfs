@@ -20,6 +20,8 @@ abstract class Dir extends VirtualFileSystemEntity {
     addChildAll(children.map((child) => child(path)).toList());
   }
 
+  static Dir get root => open("/")!;
+
   static Dir? open(String path) {
     if (VirtualFileSystem.open(path) case Dir dir) {
       return dir;

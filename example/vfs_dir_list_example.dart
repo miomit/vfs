@@ -1,7 +1,7 @@
 import 'package:vfs/vfs.dart';
 
 void main() {
-  var root = Dir.open("/")!;
+  var root = Dir.root;
 
   root.makes(
     children: [
