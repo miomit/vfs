@@ -13,9 +13,16 @@ void main() {
           VDir.create(
             "miomit",
             children: [
-              VDir.create("Documents"),
+              VDir.create(
+                "Documents",
+                children: [
+                  VFile.create("file.txt"),
+                  VFile.create("file2.txt"),
+                ],
+              ),
               VDir.create("Pictures"),
               VDir.create("Music"),
+              VFile.create("file.txt"),
             ],
           ),
         ],
@@ -23,7 +30,7 @@ void main() {
     ],
   );
 
-  (VirtualFileSystem.open("/home/")! as Dir)
+  (VirtualFileSystem.open("/home/miomit")! as Dir)
       .list(recursive: true)
       .listen((vfse) {
     print(vfse.path);

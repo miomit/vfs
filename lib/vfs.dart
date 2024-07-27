@@ -12,3 +12,6 @@ export 'package:vfs/src/virtual_file_system_entity_type.dart';
 
 export 'package:vfs/src/dirs/dir.dart';
 export 'package:vfs/src/dirs/vdir.dart';
+
+export 'package:vfs/src/files/file.dart';
+export 'package:vfs/src/files/vfile.dart';

@@ -10,7 +10,7 @@ class VDir extends Dir {
 
   static Dir Function(String) create(
     String name, {
-    List<Dir Function(String)>? children,
+    List<VirtualFileSystemEntity Function(String)>? children,
   }) {
     return (String parentPath) {
       final path = "$parentPath$name/";
