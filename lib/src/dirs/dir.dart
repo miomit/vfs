@@ -14,7 +14,7 @@ abstract class Dir extends VirtualFileSystemEntity {
   void addChild(VirtualFileSystemEntity child);
   void addChildAll(List<VirtualFileSystemEntity> children);
 
-  void makes({
+  void mounts({
     required List<Dir Function(String)> children,
   }) {
     addChildAll(children.map((child) => child(path)).toList());

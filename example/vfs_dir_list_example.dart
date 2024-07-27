@@ -3,7 +3,7 @@ import 'package:vfs/vfs.dart';
 void main() {
   var root = Dir.root;
 
-  root.makes(
+  root.mounts(
     children: [
       VDir.create("tmp"),
       VDir.create("mnt"),
